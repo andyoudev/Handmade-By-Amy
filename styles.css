@@ -88,6 +88,10 @@ h3 {
   /* z-index: 0; */
 }
 
+.tiled-image-sml {
+  display: none;
+}
+
 .disp-latest {
   position: absolute;
   top: 6%;
@@ -110,10 +114,14 @@ h3 {
 }
 
 
-#subs-section {
+#about-section {
   position: relative;
   background-color: white;
   padding: 5% 5% 5% 5%;
+}
+
+#subs-form-sml {
+  display: none;
 }
 
 #archive-section {
@@ -138,4 +146,90 @@ h3 {
   background-color: #333F50;
   color: white;
   padding: 3% 10% 3% 10%;
+}
+
+@media only screen and (max-width: 1000px) {
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.my-sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    /* height: 10%; */
+    padding: 1% 0 1% 0;
+    background-color: #333F50;
+    color: white;
+    margin-top: 110px;
+    z-index: 5;
+}
+
+.big-heading {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.subs-col {
+  display: none;
+}
+
+.tiled-image {
+  display: none;
+}
+
+.tiled-image-sml {
+  display: initial;
+  position: relative;
+  /* top: 0; */
+  width: 100%;
+  /* size: 80%;  */
+  /* clip: rect(auto auto inherit auto); */
+  padding: 0;
+  border: 0;
+  margin-top: 30%;
+  background-color: #333F50;
+}
+
+.disp-latest {
+  top: 6%;
+  right: 5%;
+  margin-top: 80%;
+}
+
+.my-about {
+  margin: auto;
+  width: 75%;
+  font-size: 1.2rem;
+}
+
+#subs-form-sml {
+  display: initial;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 5% 0 5% 0;
+  background-color: #333F50;
+}
+
+.subs-form-sml {
+  width: 100%;
+  padding: 5% 10% 5% 10%;
+  background-color: #333F50;
+}
+
+.arc-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  /* padding: 1% 5% 3% 5%; */
+  margin: 1% 2% 1% 2%;
+}
+
 }
